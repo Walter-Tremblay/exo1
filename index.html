@@ -12,5 +12,14 @@
 	<form>
 		<input type="text" name="" placeholder="Votre nom">
 	</form>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('form').submit(function(event){
+			event.preventDefault();
+
+			window.alert('Vous vous appelez '+ $('input').val());
+			$('input').val('');
+		});
+	</script>
 </body>
 </html>
